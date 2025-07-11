@@ -1,0 +1,121 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://res.cloudinary.com/ddssdrp0l/image/upload/v1750837977/Screenshot_2025-06-24_204556_cauepk.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+.about-container {
+    max-width: 800px;
+    width: 95%;
+    background: rgba(255, 255, 255, 0.95); 
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(2px); 
+}
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #0077b6;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.mission-tagline {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+h2 {
+    color: #0077b6;
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+
+ul {
+    margin-left: 20px;
+    list-style: disc;
+    font-size: 1rem;
+    color: #333;
+}
+
+a {
+     text-align: center;
+    text-decoration: none;
+    color: #f0f9ff;
+}
+
+#btn1,
+#btn2 {
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background-color: #0096c7;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#btn1:hover,
+#btn2:hover {
+    background-color: #0077b6;
+    cursor: pointer;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* ✅ Mobile-friendly styles */
+@media (max-width: 600px) {
+    .about-container {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    ul {
+        font-size: 0.95rem;
+    }
+
+    .navigation-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #btn1,
+    #btn2 {
+        width: 100%;
+        max-width: 250px;
+        height: 45px;
+    }
+
+    .mission-tagline {
+        font-size: 0.95rem;
+    }
+}
